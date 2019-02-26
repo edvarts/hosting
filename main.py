@@ -5,7 +5,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-   return render_template('gugl.html')
+    personname = 'EDE'
+    return render_template('gugl.html')
 @app.route("/learn")
 def learn():
     return "<h1>es esmu kruts zens</h1> " \
