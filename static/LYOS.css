@@ -1,0 +1,128 @@
+*{
+	font-size: 16px;
+	font:arial;
+	color: #000;
+}
+body {
+	background: none repeat scroll 0 0 #fff;
+	color: #222;
+	margin:0;
+}
+.nav {
+	float:right;
+	margin-right: 25px;
+}
+.nav li{
+	list-style: none;
+	display: inline-block;
+	text-align: right;
+	padding: 5px 10px 0 0;
+	vertical-align: bottom;
+	margin: 5px 5px 0 0;
+	font-size: 13px;
+}
+.ba{text-decoration: white; 
+ }
+.b {border: 1px solid #fff;
+    font-weight: bold;
+    text-decoration-color: #123;
+    outline: none;
+    background: #4285f4;
+  
+    background: -webkit-linear-gradient(top,#4387fd,#4683ea);
+
+    display: inline-block;
+    line-height: 28px;
+    padding: 0 12px;
+    -webkit-border-radius: 2px;
+    border-radius: 2px;
+}
+.search-box {
+	position: absolute;
+	margin-top:75px;
+	width:100%;
+}
+.search-box img {
+	padding:142px 0 24px 0;
+	display: block;
+	margin:0 auto;
+}
+.search-box input {
+	width: 600px;
+    margin: 0 auto;
+    padding: 5px;
+    border: 1px solid #d9d9d9;
+    font-size: 16px;
+    border-radius: 5px;
+    display: block;
+}
+.search-box input:focus {
+	border-color: #f5f5f5;
+}
+.search-buttons  {
+	text-align: center;
+	padding-left: 0;
+}
+.search-buttons button{
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    color: #666;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 27px;
+    margin: 17px 6px;
+    padding: 0 12px;
+    display: inline-block;
+    cursor: pointer;
+}
+.search-button button:hover{
+	background-color:#f8f8f8;
+	border: 1px solid #c6c6c6;
+    box-shadow:0 1px 1px rgba(0,0,0,0.1);
+    color:#333;
+}
+.bottom {
+	bottom: 0 ;
+	position: absolute;
+	width:100%;
+	background-color: #f2f2f2;
+	border-top: 1px solid #e4e4e4; 
+}
+ 
+.b_left {
+	margin: 0;
+}
+.b_left {
+	float:left;
+	padding-left:20px;
+}
+.b_right {
+	float:right;
+	padding-right:10px;
+}
+
+.b_left li{
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+	}
+.b_right li{
+	list-style: none;
+	display: inline;
+	line-height: 40px;
+}
+.b_right li a:first-child {
+	padding-right:8px;
+}
+.b_left li:nth-child(2),
+.b_left li:nth-child(3) {
+	margin-left:7px;
+}
+
+.b_right li a {
+	color: #666;
+    margin: 2px 10px 0;
+    letter-spacing: 0.1px;
+    font-size: 14px;
+}
