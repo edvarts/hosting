@@ -20,14 +20,18 @@
 		<li ><span class="b"><a style="color:white" href="https://accounts.google.com/ServiceLogin?hl=lv">Ieiet</a></span>
 		</li>
 	</div>
-	<div class="search-box">
-      <img src="ggl.png">
-      <input type="text" >
-      <div class="search-buttons">
-        <button>Google meklēšana {{EDE}} </button>
-        <button>Es ticu veiksmei! </button>
-      </div>
-    </div>
+	<form method="post" action="/contact">
+    <input type="text" name="contact-name" placeholder="Enter your name">
+    <br>
+
+    <input type="email" name="contact-email" placeholder="Enter email address">
+    <br>
+
+    <textarea name="contact-message" placeholder="Enter your message"></textarea>
+    <br>
+
+    <button type="submit">Submit</button>
+</form>
 	<div class="bottom">
       <ul class="b_left">
         <li>
