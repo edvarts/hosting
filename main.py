@@ -1,5 +1,6 @@
 from flask import Flask, render_template, request, make_response, g, redirect
 from models import User
+import random
 import hashlib
 import uuid
 
@@ -30,7 +31,7 @@ def logout():
 def index():
     personname = 'EDE'
     return render_template('index.html')
-@app.route("/info.html")
+@app.route("/info.html", methods=['GET', 'POST'])
 def info():
     return render_template('info.html')
 
@@ -60,6 +61,25 @@ def connect():
         else:
             status = 'Nepareizs epasts vai parole!'
     return render_template('connect.html', status=status)
+
+@app.route('/info', methods=['GET', 'POST'])
+def atbilde():
+    submit_text = request.form.get("message")
+    if submit_text:
+        user = User(answer=submit_text)
+        user.create()
+
+    answer_list = []
+    user_list = User.fetch()
+    for all_answers in user_list:
+        answer_list.append(all_answers.answer)
+    random_answers = random.sample(answer_list, 4)
+    answer_1 = random_answers[0]
+    answer_2 = random_answers[1]
+    answer_3 = random_answers[2]
+    answer_4 = random_answers[3]
+
+    return render_template('info.html', answer_1=answer_1, answer_2=answer_2, answer_3=answer_3, answer_4=answer_4)
 
 
 
