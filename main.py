@@ -43,7 +43,7 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/connect', methods=['GET', 'POST'])
+@app.route('/connect.html', methods=['GET', 'POST'])
 def connect():
     status = None
     if request.method == 'POST':
@@ -62,11 +62,11 @@ def connect():
             status = 'Nepareizs epasts vai parole!'
     return render_template('connect.html', status=status)
 
-@app.route('/info', methods=['GET', 'POST'])
+@app.route('/info.html', methods=['GET', 'POST'])
 def atbilde():
     submit_text = request.form.get("message")
     if submit_text:
-        user = User(answer=submit_text)
+        user = User(atbilde=submit_text)
         user.create()
 
     answer_list = []
