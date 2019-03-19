@@ -42,7 +42,7 @@ def contact():
     return render_template('contact.html')
 
 
-@app.route('/connect.html', methods=['GET', 'POST'])
+@app.route('/connect', methods=['GET', 'POST'])
 def connect():
     status = None
     if request.method == 'POST':
